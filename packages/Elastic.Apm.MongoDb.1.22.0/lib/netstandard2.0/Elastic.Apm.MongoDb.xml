@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Elastic.Apm.MongoDb</name>
+    </assembly>
+    <members>
+        <member name="T:Elastic.Apm.MongoDb.MongoDbDiagnosticsSubscriber">
+            <summary>
+                A subscriber to events from mongoDB driver diagnostic source.
+            </summary>
+        </member>
+        <member name="M:Elastic.Apm.MongoDb.MongoDbDiagnosticsSubscriber.Subscribe(Elastic.Apm.IApmAgent)">
+            <summary>
+            Starts listening for mongoDB driver diagnostic source events
+            </summary>
+        </member>
+        <member name="T:Elastic.Apm.MongoDb.MongoDbEventSubscriber">
+            <inheritdoc cref="T:MongoDB.Driver.Core.Events.IEventSubscriber" />
+        </member>
+        <member name="M:Elastic.Apm.MongoDb.MongoDbEventSubscriber.#ctor">
+            <summary>
+            Creates instance of <see cref="T:Elastic.Apm.MongoDb.MongoDbEventSubscriber" /> class.
+            </summary>
+        </member>
+        <member name="M:Elastic.Apm.MongoDb.MongoDbEventSubscriber.TryGetEventHandler``1(System.Action{``0}@)">
+            <summary>
+            Tries to get an event handler for an event of type <typeparamref name="TEvent" />.
+            </summary>
+            <param name="handler">The handler.</param>
+            <typeparam name="TEvent">The type of the event.</typeparam>
+            <returns>
+            <c>true</c> if this subscriber has provided an event handler; otherwise <c>false</c>.
+            </returns>
+        </member>
+    </members>
+</doc>

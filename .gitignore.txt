@@ -1,0 +1,22 @@
+# Visual Studio
+*.user
+*.suo
+*.sln.docstates
+
+# NuGet
+packages/
+*.nupkg
+*.pdb
+*.dll
+
+# AForge
+AForge/
+
+# MessagingToolkit.QRCode
+MessagingToolkit.QRCode/
+
+# ZXing.Net
+ZXing.Net/
+
+# ...
+

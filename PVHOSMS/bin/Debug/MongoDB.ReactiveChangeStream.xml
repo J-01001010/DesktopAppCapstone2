@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MongoDB.ReactiveChangeStream</name>
+    </assembly>
+    <members>
+        <member name="T:MongoDB.ReactiveChangeStream.Extensions">
+            <summary>
+                Reactive Extension for MongoDB C# Driver Change Streams
+            </summary>
+        </member>
+        <member name="M:MongoDB.ReactiveChangeStream.Extensions.CreateObservableChangeStream``1(MongoDB.Driver.IMongoDatabase,System.String,MongoDB.Driver.FilterDefinition{MongoDB.Driver.ChangeStreamDocument{``0}},System.Action{MongoDB.Driver.ChangeStreamOptions})">
+            <summary>
+                Create and start a Reactive Watcher
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="database"></param>
+            <param name="collectionName"></param>
+            <param name="filter"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.ReactiveChangeStream.Extensions.CreateObservableChangeStream``1(MongoDB.Driver.IMongoDatabase,System.String,System.Linq.Expressions.Expression{System.Func{MongoDB.Driver.ChangeStreamDocument{``0},System.Boolean}},System.Action{MongoDB.Driver.ChangeStreamOptions})">
+            <summary>
+                Create and start a Reactive Watcher
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="database"></param>
+            <param name="collectionName"></param>
+            <param name="filter"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.ReactiveChangeStream.Extensions.CreateObservableChangeStream``1(MongoDB.Driver.IMongoCollection{``0},MongoDB.Driver.FilterDefinition{MongoDB.Driver.ChangeStreamDocument{``0}},System.Action{MongoDB.Driver.ChangeStreamOptions})">
+            <summary>
+                Create and start a Reactive Watcher
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="filter"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MongoDB.ReactiveChangeStream.Extensions.CreateObservableChangeStream``1(MongoDB.Driver.IMongoCollection{``0},System.Linq.Expressions.Expression{System.Func{MongoDB.Driver.ChangeStreamDocument{``0},System.Boolean}},System.Action{MongoDB.Driver.ChangeStreamOptions})">
+            <summary>
+                Create and start a Reactive Watcher
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="filter"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
